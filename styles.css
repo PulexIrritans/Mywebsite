@@ -1,18 +1,56 @@
+/* Generic styles for all pages */
+
 * {
   box-sizing: border-box;
 }
 
 body,
 html {
+  height: 100vh;
   width: 100vw;
   margin: 0px;
   font-family: "Roboto", sans-serif;
-  color: rgb(85, 85, 87);
-  background: linear-gradient(
+  color: rgba(28, 80, 103, 255);
+  /* background: linear-gradient(
     90deg,
     rgba(255, 248, 251, 1) 44%,
     rgba(241, 247, 254, 1) 100%
+  ); */
+
+  /* background: linear-gradient(
+    90deg,
+    rgba(247,254,247,1) 41%, 
+    rgba(179,215,218,1) 100%
+  ); */
+
+  background: linear-gradient(
+    90deg,
+    rgba(240, 242, 236, 1) 0%,
+    rgba(250, 243, 243, 1) 100%
   );
+
+  /* background-image: url(/images/thom-milkovic-cBS0qKJM-P4-unsplash.jpg); */
+
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  width: 300px;
+  text-transform: uppercase;
+  color: rgba(35, 67, 91, 255);
+  font-weight: 100;
+  font-size: 1rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+p {
+  font-weight: 300;
 }
 
 .left {
@@ -23,8 +61,25 @@ html {
   width: 600px;
 }
 
+.back-home {
+  display: inline-block;
+  margin-top: 100px;
+  color: rgba(35, 67, 91, 255);
+  font-weight: 500;
+}
+    
+.back-home:hover {
+      font-weight: 900;
+}
+
+.highlight {
+  font-weight: 300;
+}
+
+/* Header styles */
+
 header {
-  margin: 80px 20px 30px 100px;
+  margin: 80px 100px 30px 100px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -32,36 +87,29 @@ header {
   gap: 20px;
 }
 
-header h1 {
-  font-size: 3rem;
-}
-
-header p {
-  font-weight:300 
-}
-
-header ul, footer ul {
+header ul,
+footer ul {
   display: flex;
   list-style: none;
   padding: 0;
   gap: 20px;
   flex-wrap: wrap;
-  font-size: 0.7rem
+  font-size: 0.7rem;
 }
 
 header li {
   text-transform: uppercase;
   letter-spacing: 1px;
-  background-color: rgb(200, 231, 85);
+  background-color: rgb(221, 231, 85);
   padding: 5px 20px;
   border-radius: 5px;
   box-shadow: 4px 6px 10px 1px rgba(0, 0, 0, 0.2);
-  transition: all .07s ease;
+  transition: all 0.07s ease;
 }
 
-header li:hover {
+header li:hover,
+header li:active {
   transform: scale(1.1);
-
 }
 
 a {
@@ -75,18 +123,22 @@ img {
 }
 
 img:hover {
-  animation: flip-with-rotate 2s linear;
+  animation: flip-with-rotate 3s linear;
 }
 
 @keyframes flip-with-rotate {
-  0% { transform: perspective(300px) rotateY(0);
+  0% {
+    transform: perspective(300px) rotateY(0);
   }
-  100% { transform: perspective(300px) rotateY(360deg);
+  50% {
+    transform: perspective(300px) rotateY(180deg);
   }
 }
 
+/* Main styles */
+
 main {
-  margin: 30px 20px 30px 100px;
+  margin: 30px 100px 30px 100px;
 }
 main section {
   display: flex;
@@ -102,7 +154,7 @@ main .about p {
 }
 
 main .about a {
-  color: rgba(113, 128, 150);
+  color: rgba(35, 67, 91, 255);
   font-weight: 500;
 }
 
@@ -111,27 +163,22 @@ main .about a:hover {
 }
 
 main h2 {
-  width: 300px;
   margin: 18.72px 0 0px 0;
-  text-transform: uppercase;
-  color: rgb(88, 100, 117);
-  font-weight: 100;
-  font-size: 1rem;
 }
 
 main h3 {
-  font-size: 1rem;
   margin-bottom: 5px;
 }
 
 main p {
-  color: rgba(113, 128, 150);
-  font-weight: 300;
+  color: rgba(35, 67, 91, 255);
   margin: 0;
 }
 
+/* Footer Styles */
+
 footer {
-  margin: 50px 20px 30px 50px;
+  margin: 50px 50px 30px 50px;
   text-align: center;
   font-weight: 100;
 }

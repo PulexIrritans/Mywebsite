@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.form {
+    display: none;
+}
+
+a {
+    display: inline-block;
+}
+
+footer {
+    flex-shrink: 0;
+}
