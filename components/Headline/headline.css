@@ -1,9 +1,14 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 900;
-    text-align: center;
-};
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: rgba(35, 67, 91, 255);
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+h3 {
+    font-size: 1rem;
+}

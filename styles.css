@@ -1,4 +1,5 @@
 @import url(/components/Social-links/social-link.css);
+@import url(/components/Headline/headline.css);
 
 /* Generic styles for all pages */
 
@@ -13,42 +14,11 @@ html {
   margin: 0px;
   font-family: "Roboto", sans-serif;
   color: rgba(28, 80, 103, 255);
-  /* background: linear-gradient(
-    90deg,
-    rgba(255, 248, 251, 1) 44%,
-    rgba(241, 247, 254, 1) 100%
-  ); */
-
-  /* background: linear-gradient(
-    90deg,
-    rgba(247,254,247,1) 41%, 
-    rgba(179,215,218,1) 100%
-  ); */
-
-  background-color: linear-gradient(
+    background-color: linear-gradient(
     90deg,
     rgba(240, 242, 236, 1) 0%,
     rgba(250, 243, 243, 1) 100%
   );
-
-  /* background-image: url(/images/thom-milkovic-cBS0qKJM-P4-unsplash.jpg); */
-
-}
-
-h1 {
-  font-size: 3rem;
-}
-
-h2 {
-  width: 300px;
-  text-transform: uppercase;
-  color: rgba(35, 67, 91, 255);
-  font-weight: 100;
-  font-size: 1rem;
-}
-
-h3 {
-  font-size: 1rem;
 }
 
 p {
@@ -109,21 +79,6 @@ footer ul {
   flex-wrap: wrap;
   font-size: 0.7rem;
 }
-
-/* header li {
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  background-color: rgb(221, 231, 85);
-  padding: 5px 20px;
-  border-radius: 5px;
-  box-shadow: 4px 6px 10px 1px rgba(0, 0, 0, 0.2);
-  transition: all 0.07s ease;
-} */
-
-/* header li:hover,
-header li:active {
-  transform: scale(1.1);
-} */
 
 a {
   text-decoration: none;
