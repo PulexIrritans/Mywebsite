@@ -1,3 +1,5 @@
+@import url(/components/Social-links/social-link.css);
+
 /* Generic styles for all pages */
 
 * {
@@ -6,7 +8,7 @@
 
 body,
 html {
-  /* height: 100vh; */
+  min-height: 100vh; /* This important for the sticky footers*/
   width: 100vw;
   margin: 0px;
   font-family: "Roboto", sans-serif;
@@ -78,7 +80,7 @@ p {
 
 /* Header styles */
 
-header {
+.header-flex-container {
   margin: 80px 100px 30px 100px;
   display: flex;
   align-items: center;
@@ -87,7 +89,18 @@ header {
   gap: 20px;
 }
 
-header ul,
+/* .spotlight {
+  font-size: 10em;
+  font-style: italic;
+  display: block;
+  text-align: end;
+}
+
+.spotlight span {
+  color: rgb(221, 231, 85);
+} */
+
+/* header ul, */
 footer ul {
   display: flex;
   list-style: none;
@@ -97,7 +110,7 @@ footer ul {
   font-size: 0.7rem;
 }
 
-header li {
+/* header li {
   text-transform: uppercase;
   letter-spacing: 1px;
   background-color: rgb(221, 231, 85);
@@ -105,12 +118,12 @@ header li {
   border-radius: 5px;
   box-shadow: 4px 6px 10px 1px rgba(0, 0, 0, 0.2);
   transition: all 0.07s ease;
-}
+} */
 
-header li:hover,
+/* header li:hover,
 header li:active {
   transform: scale(1.1);
-}
+} */
 
 a {
   text-decoration: none;

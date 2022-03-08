@@ -1,0 +1,23 @@
+.social-link {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 0.7rem;
+}
+
+.social-link-item {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: rgb(221, 231, 85);
+    padding: 5px 20px;
+    border-radius: 5px;
+    box-shadow: 4px 6px 10px 1px rgba(0, 0, 0, 0.2);
+    transition: all 0.07s ease;
+}
+.social-link-item:hover, 
+.social-link-item:active {
+    transform: scale(1.1);
+}
+
